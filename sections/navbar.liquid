@@ -124,58 +124,65 @@
   top: 0;
   width: 100%;
   z-index: 999;
-  transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  transition: all 0.3s ease;
 }
 
+/* TRANSPARENT STATE */
 #navbar-wrapper.is-transparent {
   background: transparent !important;
   box-shadow: none !important;
-  border-color: transparent !important;
+  border: none !important;
 }
 
-#navbar-wrapper.is-transparent a,
-#navbar-wrapper.is-transparent span,
-#navbar-wrapper.is-transparent svg {
+#navbar-wrapper.is-transparent * {
   color: white !important;
 }
 
+/* DEFAULT (SOLID) STATE */
 #navbar-wrapper.is-default {
-  background: var(--bs-body-bg) !important;
-  color: var(--bs-body-color) !important;
+  background: #ffffff !important; /* force white */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+#navbar-wrapper.is-default * {
+  color: #000 !important;
 }
 </style>
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  const navbar = document.querySelector("#navbar-wrapper");
+  const navbar = document.getElementById("navbar-wrapper");
   if (!navbar) return;
 
-  let lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  let lastScroll = window.scrollY;
 
+  // initial state
   navbar.classList.add("is-transparent");
 
   window.addEventListener("scroll", function () {
-    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+    let currentScroll = window.scrollY;
 
     if (currentScroll <= 10) {
+      // top of page
       navbar.classList.remove("is-default");
       navbar.classList.add("is-transparent");
-    } else if (currentScroll > lastScrollTop) {
+    } 
+    else if (currentScroll > lastScroll) {
+      // scrolling down
       navbar.classList.remove("is-default");
       navbar.classList.add("is-transparent");
-    } else {
+    } 
+    else {
+      // scrolling up
       navbar.classList.remove("is-transparent");
       navbar.classList.add("is-default");
     }
 
-    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    lastScroll = currentScroll;
   });
 });
 </script>
 {% endif %}
-
-
-
 
 
 
