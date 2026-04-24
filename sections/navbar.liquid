@@ -117,65 +117,91 @@
 {% endfor %}
 
 
+
+
+
 {% if template.name == 'index' %}
 <style>
 #navbar-wrapper {
-  position: fixed;
+  display: block;
+  position: fixed !important;
   top: 0;
+  left: 0;
   width: 100%;
-  z-index: 999;
-  transition: all 0.3s ease;
+  z-index: 9999;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* TRANSPARENT STATE */
-#navbar-wrapper.is-transparent {
+/* Transparent state */
+#navbar-wrapper.nav-transparent,
+#navbar-wrapper.nav-transparent nav {
   background: transparent !important;
   box-shadow: none !important;
-  border: none !important;
+  border-color: transparent !important;
 }
 
-#navbar-wrapper.is-transparent * {
-  color: white !important;
+#navbar-wrapper.nav-transparent a,
+#navbar-wrapper.nav-transparent span,
+#navbar-wrapper.nav-transparent svg {
+  color: #ffffff !important;
+  fill: #ffffff !important;
+  stroke: #ffffff !important;
 }
 
-/* DEFAULT (SOLID) STATE */
-#navbar-wrapper.is-default {
-  background: #ffffff !important; /* force white */
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+/* Logo becomes white */
+#navbar-wrapper.nav-transparent img {
+  filter: brightness(0) invert(1) !important;
 }
 
-#navbar-wrapper.is-default * {
-  color: #000 !important;
+/* Solid state when scrolling up */
+#navbar-wrapper.nav-solid,
+#navbar-wrapper.nav-solid nav {
+  background: #ffffff !important;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08) !important;
+}
+
+#navbar-wrapper.nav-solid a,
+#navbar-wrapper.nav-solid span,
+#navbar-wrapper.nav-solid svg {
+  color: #000000 !important;
+  fill: #000000 !important;
+  stroke: #000000 !important;
+}
+
+/* Logo becomes black */
+#navbar-wrapper.nav-solid img {
+  filter: brightness(0) !important;
 }
 </style>
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  const navbar = document.getElementById("navbar-wrapper");
+  const navbar = document.querySelector("#navbar-wrapper");
   if (!navbar) return;
 
   let lastScroll = window.scrollY;
 
-  // initial state
-  navbar.classList.add("is-transparent");
+  function makeTransparent() {
+    navbar.classList.add("nav-transparent");
+    navbar.classList.remove("nav-solid");
+  }
+
+  function makeSolid() {
+    navbar.classList.add("nav-solid");
+    navbar.classList.remove("nav-transparent");
+  }
+
+  makeTransparent();
 
   window.addEventListener("scroll", function () {
-    let currentScroll = window.scrollY;
+    const currentScroll = window.scrollY;
 
-    if (currentScroll <= 10) {
-      // top of page
-      navbar.classList.remove("is-default");
-      navbar.classList.add("is-transparent");
-    } 
-    else if (currentScroll > lastScroll) {
-      // scrolling down
-      navbar.classList.remove("is-default");
-      navbar.classList.add("is-transparent");
-    } 
-    else {
-      // scrolling up
-      navbar.classList.remove("is-transparent");
-      navbar.classList.add("is-default");
+    if (currentScroll <= 20) {
+      makeTransparent();
+    } else if (currentScroll > lastScroll) {
+      makeTransparent();
+    } else if (currentScroll < lastScroll) {
+      makeSolid();
     }
 
     lastScroll = currentScroll;
@@ -183,19 +209,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 {% endif %}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
