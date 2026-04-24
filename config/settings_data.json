@@ -103,7 +103,7 @@
   "platform_customizations": {
     "custom_css": [
       "#navbar-wrapper .navbar-logo {justify-content: center;}",
-      ".nav-link.active {background-color: #e12527;}"
+      ".nav-link.active {background-color: #e12527; color: white;}"
     ]
   }
 }
