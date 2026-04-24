@@ -36,80 +36,9 @@
         "pt": 8,
         "pb": 12
       }
-    },
-    "hero_carousel_CcadVE": {
-      "type": "hero-carousel",
-      "blocks": {
-        "slide_rk4Qa6": {
-          "type": "slide",
-          "settings": {
-            "overlay_color": "#000000",
-            "overlay_opacity": 100,
-            "overlay_blur": 0,
-            "subtitle": "",
-            "title": "WE SIMPLY OFFER THE BEST",
-            "description": "<p>ONLINE STORE</p>",
-            "btn_primary_text": "",
-            "btn_primary_url": "",
-            "btn_secondary_text": "",
-            "btn_secondary_url": ""
-          }
-        },
-        "slide_px4qPz": {
-          "type": "slide",
-          "settings": {
-            "overlay_color": "#000000",
-            "overlay_opacity": 100,
-            "overlay_blur": 0,
-            "subtitle": "",
-            "title": "WE SIMPLY OFFER THE BEST",
-            "description": "<p>SHOPPING EXPERIENCE</p>",
-            "btn_primary_text": "",
-            "btn_primary_url": "",
-            "btn_secondary_text": "",
-            "btn_secondary_url": ""
-          }
-        }
-      },
-      "block_order": [
-        "slide_rk4Qa6",
-        "slide_px4qPz"
-      ],
-      "name": "Hero carousel",
-      "settings": {
-        "bg_color": "bg-body",
-        "bg_opacity": 100,
-        "bg_gradient": "",
-        "text_color": "text-secondary",
-        "border_top_width": 0,
-        "border_bottom_width": 0,
-        "border_color": "border-body",
-        "border_opacity": 100,
-        "carousel_controls": false,
-        "carousel_indicators": false,
-        "carousel_transition": "slide carousel-fade",
-        "carousel_transition_duration": 100,
-        "carousel_autoplay": 2,
-        "carousel_effect": "",
-        "media_mobile_height": 400,
-        "media_desktop_height": 700,
-        "media_adapt": false,
-        "media_full": false,
-        "caption_max_width": "900",
-        "caption_position": "carousel-caption-center",
-        "subtitle_font_size": "fs-md",
-        "title_font_size": "h2",
-        "description_font_size": "fs-lg",
-        "btn_primary_color": "btn-primary",
-        "btn_secondary_color": "btn-secondary",
-        "btn_font_size": "fs-md",
-        "pt": 0,
-        "pb": 0
-      }
     }
   },
   "order": [
-    "9b5ef318-8d23-40cd-a163-d1f62c2d0834",
-    "hero_carousel_CcadVE"
+    "9b5ef318-8d23-40cd-a163-d1f62c2d0834"
   ]
 }
