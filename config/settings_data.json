@@ -99,5 +99,10 @@
     "product_card_img_carousel_dark": false,
     "cart_img_border": "img-thumbnail",
     "content_for_index": []
+  },
+  "platform_customizations": {
+    "custom_css": [
+      "#navbar-wrapper .navbar-logo {justify-content: center;}"
+    ]
   }
 }

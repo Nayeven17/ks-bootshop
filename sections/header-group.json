@@ -77,6 +77,7 @@
         "desktop_QyybDD",
         "mobile_pG6Mfm"
       ],
+      "custom_css": [],
       "name": "Navbar",
       "settings": {
         "bg_color": "bg-body",
