@@ -19,7 +19,7 @@
     "logo": "shopify://shop_images/Logo_SEA.webp",
     "favicon": "shopify://shop_images/Logo_SEA.webp",
     "font_body": "questrial_n4",
-    "font_headings": "montserrat_n5",
+    "font_headings": "space_grotesk_n6",
     "btn_font_size": 1,
     "btn_text_transform": "",
     "btn_font_family": "var(--bs-body-font-family)",
