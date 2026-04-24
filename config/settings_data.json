@@ -11,8 +11,8 @@
   "current": {
     "color_primary": "#000000",
     "color_secondary": "#e12527",
-    "color_body_bg": "#000000",
-    "color_body_color": "#ffffff",
+    "color_body_bg": "#ffffff",
+    "color_body_color": "#000000",
     "transparent_header": "header-transparent",
     "container_max_width": 1500,
     "border_radius": 0.3,
