@@ -17,14 +17,13 @@
         "slide_mwF4Tk": {
           "type": "slide",
           "settings": {
-            "announcement": "Free Shipping For All Orders Over $100"
+            "announcement": "<strong>Give us a call now: +230 5790 47 55</strong>"
           }
         }
       },
       "block_order": [
         "slide_mwF4Tk"
       ],
-      "disabled": true,
       "settings": {
         "bg_color": "bg-primary",
         "bg_opacity": 100,
@@ -39,8 +38,8 @@
         "font_size_desktop": "fs-desktop-sm",
         "text_transform": "",
         "letter_spacing": 1,
-        "carousel_autoplay": 5,
-        "carousel_vertical": true,
+        "carousel_autoplay": 0,
+        "carousel_vertical": false,
         "pt": 4,
         "pb": 4
       }
