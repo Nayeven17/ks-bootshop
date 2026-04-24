@@ -24,6 +24,7 @@
       "block_order": [
         "slide_mwF4Tk"
       ],
+      "disabled": true,
       "settings": {
         "bg_color": "bg-primary",
         "bg_opacity": 100,
@@ -53,7 +54,7 @@
             "container_max_width": "",
             "logo_height": 40,
             "main_menu": "main-menu",
-            "pt": 3,
+            "pt": 0,
             "pb": 3
           }
         }
@@ -63,13 +64,13 @@
       ],
       "name": "Navbar",
       "settings": {
-        "bg_color": "bg-body",
+        "bg_color": "bg-white",
         "bg_opacity": 100,
-        "bg_gradient": "",
-        "text_color": "text-body",
-        "border_top_width": 0,
-        "border_bottom_width": 0,
-        "border_color": "border-body",
+        "bg_gradient": "bg-gradient",
+        "text_color": "text-primary",
+        "border_top_width": 10,
+        "border_bottom_width": 10,
+        "border_color": "border-white",
         "border_opacity": 100,
         "shadow": "shadow-sm"
       }
