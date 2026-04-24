@@ -102,7 +102,8 @@
   },
   "platform_customizations": {
     "custom_css": [
-      "#navbar-wrapper .navbar-logo {justify-content: center;}"
+      "#navbar-wrapper .navbar-logo {justify-content: center;}",
+      ".nav-link.active {background-color: #e12527;}"
     ]
   }
 }
