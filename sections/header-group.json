@@ -58,10 +58,24 @@
             "pt": 0,
             "pb": 0
           }
+        },
+        "mobile_pG6Mfm": {
+          "type": "mobile",
+          "settings": {
+            "container_max_width": "",
+            "logo": "shopify://shop_images/Logo_SEA.webp",
+            "logo_height": 52,
+            "main_menu": "main-menu",
+            "collections_menu": "",
+            "social_icons": false,
+            "pt": 3,
+            "pb": 3
+          }
         }
       },
       "block_order": [
-        "desktop_QyybDD"
+        "desktop_QyybDD",
+        "mobile_pG6Mfm"
       ],
       "name": "Navbar",
       "settings": {
