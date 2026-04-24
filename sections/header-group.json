@@ -52,10 +52,11 @@
           "type": "desktop",
           "settings": {
             "container_max_width": "",
-            "logo_height": 40,
+            "logo": "shopify://shop_images/Logo_SEA.webp",
+            "logo_height": 70,
             "main_menu": "main-menu",
             "pt": 0,
-            "pb": 3
+            "pb": 0
           }
         }
       },
@@ -64,12 +65,12 @@
       ],
       "name": "Navbar",
       "settings": {
-        "bg_color": "bg-white",
+        "bg_color": "bg-body",
         "bg_opacity": 100,
         "bg_gradient": "bg-gradient",
-        "text_color": "text-primary",
-        "border_top_width": 10,
-        "border_bottom_width": 10,
+        "text_color": "text-white",
+        "border_top_width": 0,
+        "border_bottom_width": 0,
         "border_color": "border-white",
         "border_opacity": 100,
         "shadow": "shadow-sm"
