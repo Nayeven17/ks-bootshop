@@ -64,12 +64,12 @@
           "settings": {
             "container_max_width": "",
             "logo": "shopify://shop_images/Logo_SEA.webp",
-            "logo_height": 52,
+            "logo_height": 40,
             "main_menu": "main-menu",
             "collections_menu": "",
             "social_icons": false,
-            "pt": 3,
-            "pb": 3
+            "pt": 6,
+            "pb": 2
           }
         }
       },
